@@ -1,0 +1,63 @@
+{
+ "autoname": "field:dashboard_name",
+ "creation": "2019-01-10 12:54:40.938705",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "dashboard_name",
+  "is_default",
+  "charts"
+ ],
+ "fields": [
+  {
+   "fieldname": "dashboard_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Dashboard Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_default",
+   "fieldtype": "Check",
+   "label": "Is Default"
+  },
+  {
+   "fieldname": "charts",
+   "fieldtype": "Table",
+   "label": "Charts",
+   "options": "Dashboard Chart Link",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-11-06 20:44:17.114229",
+ "modified_by": "Administrator",
+ "module": "Desk",
+ "name": "Dashboard",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "All"
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "dashboard_name",
+ "track_changes": 1
+}
